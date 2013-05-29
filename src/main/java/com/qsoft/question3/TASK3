@@ -1,0 +1,17 @@
+his code will send faxes from a specified file name to a U.S. phone number.
+There is a validation requirement;
+a U.S. phone number with area code must be of the form xnn-nnn-nnnn,
+where x must be a digit in the range [2..9] and n can be [0..9].
+The following blocks are reserved and are not currently valid area codes: x11, x9n, 37n, 96n.
+
+B
+    C -- test method send Fax với phone format ko đúng : xxxxxxxxxxx
+    O ---
+    R -- test với phone number 1nn-nnn-nnnn, 0nn-nnn-nnnn
+        test method với phone number x11-nnn-nnnn , x9n-nnn-nnnn 37n-nnn-nnnn, 96n-nnn-nnnn
+    R ---
+    E -- test method send Fax với phone là String rỗng ("") / filename là String rỗng ("")
+         test method với ......................... null ............................ null
+
+    C ---
+    T ---

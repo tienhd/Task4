@@ -1,0 +1,19 @@
+The class that controls it takes a few basic commands. The co- ordinates (0,0) represent the
+lower-left corner of the machine. x and y increase as you move toward the upper-right corner,
+whose coordinates are x = getTableSize().width - 1 and y = getTableSize().height - 1.
+
+There are some real-world constraints that might be interest- ing:
+you can’t sew thin air, of course, and you can’t sew a workpiece bigger than the machine.
+Given these requirements, what boundary conditions can you think of?
+
+B
+    C --
+    O --
+    R ---
+        Test method moveTo, sewTo, setWorkpieceSize at position -1 0 , 0 -1, -1 -1
+        setWorkpieceSize 100 100 . then moveTo, sewTo 150 150
+    R --
+    E ---
+        Test method moveTo, sewTo, setWorkpieceSize at null null, 0 0
+    C
+    T

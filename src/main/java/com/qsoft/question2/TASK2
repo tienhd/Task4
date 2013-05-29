@@ -1,0 +1,14 @@
+A shopping cart. This class lets you add, delete, and count the items in a shopping cart.
+What sort of boundary conditions might come up? Are there any implicit restrictions on what you can delete?
+Are there any interesting issues if the cart is empty?
+
+B
+    C ---
+    O ---
+    R -- addItem , deleteItem với quantity âm.
+
+    R ---
+    E -- tìm iterator của shopping cart rỗng
+         deleteItem với shopping card rỗng
+    C ---
+    T ---
