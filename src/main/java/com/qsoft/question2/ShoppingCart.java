@@ -31,6 +31,4 @@ public interface ShoppingCart {
      * Return Iterator of all items * (see Java Collection’s doc)
      */
     public Iterator iterator();
-
-    public void Test();
 }
